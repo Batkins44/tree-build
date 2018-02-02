@@ -13,7 +13,16 @@ function heightInput(){
 function charInput(){
     return document.getElementById("char").value;
 }
+function enterFunc(){
 
+    if (event.which == 13 || event.keyCode == 13){
+       
+      
+        tree();
+
+    }
+
+  }
 
 function tree(){
     height = heightInput();
@@ -21,6 +30,9 @@ function tree(){
     charac = charInput();
     console.log("character:", charac);
     row = charac
+    if(height === "" || charac === ""){
+        alert("Bruh,put some text in there");
+    }
     for(i=0;i<height;i++){
         
         c = charac
@@ -37,3 +49,4 @@ function test(){
     console.log(charInput());
 }
 button.addEventListener("click", tree);
+addEventListener("keypress", enterFunc);
