@@ -29,22 +29,22 @@ function tree(){
     console.log("height:", height);
     charac = charInput();
     console.log("character:", charac);
-    row = charac
+    row = charac;
+    c = charac;
     if(height === "" || charac === ""){
         alert("Bruh,put some text in there");
-    }
+    } 
     for(i=0;i<height;i++){
         
-        c = charac
         place.innerHTML += `<center>${row}<br></center>`
         console.log(c)
-        row +=c
+        row += (c+c)
     }
 }
 
 
 function test(){
-    console.log("It works bitch");
+    console.log("It works");
     console.log(heightInput());
     console.log(charInput());
 }
