@@ -26,9 +26,7 @@ function enterFunc(){
 
 function tree(){
     height = heightInput();
-    console.log("height:", height);
     charac = charInput();
-    console.log("character:", charac);
     row = charac;
     c = charac;
     if(height === "" || charac === ""){
@@ -37,16 +35,12 @@ function tree(){
     for(i=0;i<height;i++){
         
         place.innerHTML += `<center>${row}<br></center>`
-        console.log(c)
         row += (c+c)
     }
 }
 
 
 function test(){
-    console.log("It works");
-    console.log(heightInput());
-    console.log(charInput());
 }
 button.addEventListener("click", tree);
 addEventListener("keypress", enterFunc);
